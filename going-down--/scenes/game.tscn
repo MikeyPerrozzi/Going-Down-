@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bskkvitnohpv4"]
+
+[ext_resource type="PackedScene" uid="uid://xrw4bwmvrwfa" path="res://scenes/player.tscn" id="1_uwrxv"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_g4v7s"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_g4v7s"]
+a = Vector2(140, -114)
+b = Vector2(141, 1)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_yf5fn"]
+a = Vector2(-145, -114)
+b = Vector2(-145, 1)
+
+[node name="Game" type="Node2D" unique_id=1293251095]
+
+[node name="Player" parent="." unique_id=299972764 instance=ExtResource("1_uwrxv")]
+position = Vector2(-55, 39)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1024822173]
+position = Vector2(-55, 35)
+zoom = Vector2(4, 4)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=446730158]
+position = Vector2(-53, 114)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1942682993]
+shape = SubResource("WorldBoundaryShape2D_g4v7s")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1555386154]
+shape = SubResource("SegmentShape2D_g4v7s")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1093432911]
+shape = SubResource("SegmentShape2D_yf5fn")
