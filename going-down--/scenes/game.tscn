@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bskkvitnohpv4"]
 
 [ext_resource type="PackedScene" uid="uid://xrw4bwmvrwfa" path="res://scenes/player.tscn" id="1_uwrxv"]
+[ext_resource type="Script" uid="uid://brqubudb5jai6" path="res://scenes/game.gd" id="1_yqjtg"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_g4v7s"]
 
@@ -13,6 +14,7 @@ a = Vector2(-145, -114)
 b = Vector2(-145, 1)
 
 [node name="Game" type="Node2D" unique_id=1293251095]
+script = ExtResource("1_yqjtg")
 
 [node name="Player" parent="." unique_id=299972764 instance=ExtResource("1_uwrxv")]
 position = Vector2(-55, 39)
@@ -32,3 +34,9 @@ shape = SubResource("SegmentShape2D_g4v7s")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1093432911]
 shape = SubResource("SegmentShape2D_yf5fn")
+
+[node name="Timer" type="Timer" parent="." unique_id=1220634589]
+process_callback = 0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer" to="Player" method="_on_timer_timeout"]
