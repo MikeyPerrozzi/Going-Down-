@@ -15,6 +15,8 @@ func _physics_process(delta: float) -> void:
 	
 	# Input for player character
 	var direction := Input.get_axis("move_left", "move_right")
+	# could maybe try adding a way to have 
+	# upper/lower direction as separate variables
 	
 	# Flipping player character
 	if direction > 0:
@@ -34,6 +36,9 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		
+	#TEST
+	#var direction = Input.get_vector("move_left", "move_right","move_up","move_down")
+	#velocity = direction * SPEED
 	
 		
 	move_and_slide()

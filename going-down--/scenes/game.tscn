@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bskkvitnohpv4"]
 
 [ext_resource type="PackedScene" uid="uid://xrw4bwmvrwfa" path="res://scenes/player.tscn" id="1_uwrxv"]
-[ext_resource type="Script" uid="uid://brqubudb5jai6" path="res://scenes/game.gd" id="1_yqjtg"]
+[ext_resource type="Script" uid="uid://brqubudb5jai6" path="res://scripts/game.gd" id="1_yqjtg"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_g4v7s"]
 
