@@ -20,9 +20,9 @@ func _physics_process(delta: float) -> void:
 	
 	# Flipping player character
 	if direction > 0:
-		animated_sprite.flip_h = false
-	elif direction < 0:
 		animated_sprite.flip_h = true
+	elif direction < 0:
+		animated_sprite.flip_h = false
 	
 	# Different Anims
 	if direction == 0:
