@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dgjv4g6akyhq3"]
+
+[ext_resource type="Script" uid="uid://cuprlhx5drpqt" path="res://scripts/danger_zone.gd" id="1_41ndt"]
+
+[node name="DangerZone" type="Area2D" unique_id=163280094]
+collision_mask = 2
+script = ExtResource("1_41ndt")
+
+[node name="Timer" type="Timer" parent="." unique_id=1555881824]
+wait_time = 0.6
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

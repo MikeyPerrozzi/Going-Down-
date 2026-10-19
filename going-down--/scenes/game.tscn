@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://xrw4bwmvrwfa" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Script" uid="uid://brqubudb5jai6" path="res://scripts/game.gd" id="1_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://4i80d2psqmtc" path="res://scenes/swordfish_enemy.tscn" id="3_lnu2h"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_g4v7s"]
 
@@ -37,6 +38,10 @@ shape = SubResource("SegmentShape2D_yf5fn")
 
 [node name="Timer" type="Timer" parent="." unique_id=1220634589]
 process_callback = 0
+wait_time = 0.003
+
+[node name="swordfish_enemy" parent="." unique_id=616288120 instance=ExtResource("3_lnu2h")]
+position = Vector2(-171, 30)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="Timer" to="Player" method="_on_timer_timeout"]

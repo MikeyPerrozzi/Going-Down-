@@ -14,6 +14,6 @@ func _process(delta: float) -> void:
 	pass
 
 
-func _on_timer_timeout() -> void:
-	print(Score)
-	Score += 1;
+#func _on_timer_timeout() -> void:
+	#print(Score)
+	#Score += 1;
