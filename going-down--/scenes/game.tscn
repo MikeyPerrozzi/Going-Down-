@@ -41,7 +41,7 @@ process_callback = 0
 wait_time = 0.003
 
 [node name="swordfish_enemy" parent="." unique_id=616288120 instance=ExtResource("3_lnu2h")]
-position = Vector2(-171, 30)
+position = Vector2(-171, 27)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="Timer" to="Player" method="_on_timer_timeout"]
