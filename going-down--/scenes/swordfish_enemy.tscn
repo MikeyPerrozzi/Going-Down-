@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://4i80d2psqmtc"]
 
 [ext_resource type="Texture2D" uid="uid://c3i6uaabqp8fc" path="res://assets/Swordfish_Walk-Sheet.png" id="1_47rt0"]
+[ext_resource type="Script" uid="uid://tmq231idf1hi" path="res://scenes/swordfish_enemy.gd" id="1_mw1fo"]
 [ext_resource type="PackedScene" uid="uid://dgjv4g6akyhq3" path="res://scenes/danger_zone.tscn" id="2_mw1fo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mw1fo"]
@@ -43,6 +44,7 @@ animations = [{
 size = Vector2(22, 18)
 
 [node name="swordfish_enemy" type="Node2D" unique_id=616288120]
+script = ExtResource("1_mw1fo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1370924272]
 sprite_frames = SubResource("SpriteFrames_g4v7s")
