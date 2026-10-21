@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bkkhk4bym111l"]
+
+[ext_resource type="Texture2D" uid="uid://d3bqtua32nbt8" path="res://assets/AnPhiastBigFinInc.png" id="1_veatj"]
+[ext_resource type="Script" uid="uid://c4pgm8tqbhasu" path="res://scenes/cutscene1.gd" id="2_aqdjm"]
+
+[node name="Control" type="Control" unique_id=112398211]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnPhiastBigFinInc" type="Sprite2D" parent="." unique_id=2046726081]
+position = Vector2(632.5, 364)
+scale = Vector2(0.83928573, 0.7413442)
+texture = ExtResource("1_veatj")
+
+[node name="Button" type="Button" parent="." unique_id=1046525327]
+layout_mode = 0
+offset_left = 965.0
+offset_top = 28.0
+offset_right = 1236.0
+offset_bottom = 161.0
+theme_override_font_sizes/font_size = 40
+text = "NEXT"
+script = ExtResource("2_aqdjm")
+
+[node name="Label" type="Label" parent="." unique_id=325254387]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 543.0
+offset_right = 1270.0
+offset_bottom = 725.0
+theme_override_font_sizes/font_size = 24
+text = "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\""
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
