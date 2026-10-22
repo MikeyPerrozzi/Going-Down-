@@ -34,8 +34,8 @@ offset_left = 3.0
 offset_top = 543.0
 offset_right = 1270.0
 offset_bottom = 725.0
-theme_override_font_sizes/font_size = 24
-text = "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\""
+theme_override_font_sizes/font_size = 30
+text = "An Phiast is looking for a new job in Big Fin Inc. It's been tough, but with his trusty tie and can-do attitude, he's confident he'll make it. However, if he wants to move up in his job and get a promotion, he's going to have to move down to the boss' room. Defeating Big Fin himself will guarantee him a spot at the top of the company! "
 horizontal_alignment = 1
 autowrap_mode = 2
 

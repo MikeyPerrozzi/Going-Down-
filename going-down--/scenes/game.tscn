@@ -32,16 +32,18 @@ zoom = Vector2(4, 4)
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=446730158]
 position = Vector2(-53, 114)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1942682993]
+[node name="wall" type="CollisionShape2D" parent="StaticBody2D" unique_id=1942682993]
 shape = SubResource("WorldBoundaryShape2D_g4v7s")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1555386154]
+[node name="wall2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1555386154]
+position = Vector2(22, -1)
 shape = SubResource("SegmentShape2D_g4v7s")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1093432911]
+[node name="wall3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1093432911]
+position = Vector2(-22, -1)
 shape = SubResource("SegmentShape2D_yf5fn")
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1600926020]
+[node name="wall4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1600926020]
 position = Vector2(-3, -120.75)
 shape = SubResource("RectangleShape2D_saqji")
 

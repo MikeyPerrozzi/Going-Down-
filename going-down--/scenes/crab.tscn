@@ -34,7 +34,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_saqji"]
-size = Vector2(21, 16)
+size = Vector2(21, 4)
 
 [node name="Crab" type="Node2D" unique_id=1759652398]
 script = ExtResource("1_rq6vx")
@@ -50,5 +50,5 @@ frame_progress = 0.1773628
 collision_mask = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/DangerZone" unique_id=1065088026]
-position = Vector2(0.5, 8)
+position = Vector2(0.5, 14)
 shape = SubResource("RectangleShape2D_saqji")
