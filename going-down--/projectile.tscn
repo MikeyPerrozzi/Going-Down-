@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c3pv6fkc4um6y"]
+
+[ext_resource type="Script" uid="uid://dqabym12hxggp" path="res://projectile.gd" id="1_qxf0c"]
+[ext_resource type="Texture2D" uid="uid://b3n8e40oo57k7" path="res://assets/fistBullet.png" id="2_dgwo2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_saqji"]
+size = Vector2(28, 27)
+
+[node name="projectile" type="Area2D" unique_id=500803927]
+script = ExtResource("1_qxf0c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1869069013]
+shape = SubResource("RectangleShape2D_saqji")
+
+[node name="FistBullet" type="Sprite2D" parent="." unique_id=690966561]
+position = Vector2(0, 2)
+texture = ExtResource("2_dgwo2")

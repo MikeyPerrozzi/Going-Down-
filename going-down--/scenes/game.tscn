@@ -15,11 +15,14 @@ b = Vector2(141, 1)
 a = Vector2(-145, -114)
 b = Vector2(-145, 1)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_saqji"]
+size = Vector2(322, 75.5)
+
 [node name="Game" type="Node2D" unique_id=1293251095]
 script = ExtResource("1_yqjtg")
 
 [node name="Player" parent="." unique_id=299972764 instance=ExtResource("1_uwrxv")]
-position = Vector2(-55, 39)
+position = Vector2(-55, 60)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1024822173]
 position = Vector2(-55, 35)
@@ -37,16 +40,20 @@ shape = SubResource("SegmentShape2D_g4v7s")
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1093432911]
 shape = SubResource("SegmentShape2D_yf5fn")
 
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1600926020]
+position = Vector2(-3, -120.75)
+shape = SubResource("RectangleShape2D_saqji")
+
 [node name="Timer" type="Timer" parent="." unique_id=1220634589]
 process_callback = 0
 wait_time = 0.003
 
 [node name="swordfish_enemy" parent="." unique_id=616288120 instance=ExtResource("3_lnu2h")]
-position = Vector2(-171, 27)
+position = Vector2(-171, 48)
 
 [node name="Elevatorproject" type="Sprite2D" parent="." unique_id=1852692344]
 z_index = -1
-position = Vector2(-55, 38)
+position = Vector2(-55, 30.999998)
 scale = Vector2(0.25972214, 0.25972217)
 texture = ExtResource("4_lbhrr")
 

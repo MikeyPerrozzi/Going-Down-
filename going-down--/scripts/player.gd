@@ -37,8 +37,14 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		
 	#TEST
-	#var direction = Input.get_vector("move_left", "move_right","move_up","move_down")
-	#velocity = direction * SPEED
+	var direction2 = Input.get_vector("move_left", "move_right","move_up","move_down")
+	velocity = direction2 * SPEED
 	
-		
 	move_and_slide()
+	
+	
+func create_proj():
+	var bulletDirection = position.direction_to(get_global_mouse_position())
+	var bullet = Projectile.create(bulletDirection)
+	add_child(bullet)
+	bullet.position = position
