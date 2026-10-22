@@ -70,5 +70,5 @@ Oisin Leonard
 Mikey Perrozzi "
 
 [connection signal="pressed" from="Start Button" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Exit Button" to="." method="_on_exit_button_pressed"]
 [connection signal="pressed" from="Exit Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Exit Button" to="." method="_on_exit_button_pressed"]

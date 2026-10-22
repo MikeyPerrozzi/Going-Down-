@@ -2,11 +2,12 @@ class_name Projectile
 extends Area2D
 
 var direction
+@onready var fist_bullet: Sprite2D = $FistBullet
 
 signal projectileHit
 
 # stats
-var speed = 1
+var speed = 150
 var damage = 1
 
 static func create(direction) -> Projectile:
@@ -15,5 +16,8 @@ static func create(direction) -> Projectile:
 	proj.direction = direction
 	return proj
 
+func _ready() -> void:
+	fist_bullet.rotation = Vector2.UP.angle_to(direction)
+
 func _process(delta: float) -> void:
-	pass
+	position += speed * direction * delta
