@@ -59,7 +59,7 @@ scale = Vector2(0.25972214, 0.25972217)
 texture = ExtResource("4_lbhrr")
 
 [node name="Crab" parent="." unique_id=1759652398 instance=ExtResource("5_iywne")]
-position = Vector2(-9, 45)
+position = Vector2(61, 73)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="Timer" to="Player" method="_on_timer_timeout"]
