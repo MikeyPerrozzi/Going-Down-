@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://cfd8phywy046f"]
+
+[ext_resource type="Texture2D" uid="uid://ctdnn6ea66jq8" path="res://assets/An phiast scene 2.png" id="1_af4c7"]
+[ext_resource type="Script" uid="uid://d2o1mtbb0ukf4" path="res://next.gd" id="2_6neoj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dqjbv"]
+bg_color = Color(0, 0, 0, 0.41568628)
+
+[node name="Control" type="Control" unique_id=526122839]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_6neoj")
+
+[node name="AnPhiastScene2" type="Sprite2D" parent="." unique_id=610858855]
+position = Vector2(638.9552, 366.87497)
+scale = Vector2(0.8492655, 0.7492363)
+texture = ExtResource("1_af4c7")
+
+[node name="Button" type="Button" parent="." unique_id=1846230115]
+layout_mode = 0
+offset_left = 972.0
+offset_top = 33.0
+offset_right = 1260.0
+offset_bottom = 169.0
+theme_override_font_sizes/font_size = 40
+text = "NEXT"
+script = ExtResource("2_6neoj")
+
+[node name="Label" type="Label" parent="." unique_id=1647191885]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 567.0
+offset_right = 1282.0
+offset_bottom = 732.0
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_dqjbv")
+text = "With the other employees fighting for the same position,
+ An Phiast is going to have to punch his way down to the boss room!"
+horizontal_alignment = 1
