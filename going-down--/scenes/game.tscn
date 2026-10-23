@@ -2,10 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://xrw4bwmvrwfa" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Script" uid="uid://brqubudb5jai6" path="res://scripts/game.gd" id="1_yqjtg"]
+[ext_resource type="Script" uid="uid://dvqdch3mwfiy" path="res://scenes/game_manager.gd" id="2_gee14"]
 [ext_resource type="PackedScene" uid="uid://4i80d2psqmtc" path="res://scenes/swordfish_enemy.tscn" id="3_lnu2h"]
 [ext_resource type="Texture2D" uid="uid://xgv6bv12cxek" path="res://assets/elevatorproject.png" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://c732gxfqqwcss" path="res://scenes/crab.tscn" id="5_iywne"]
 [ext_resource type="AudioStream" uid="uid://dgmnerd2lemk6" path="res://assets/First_day_on_the_job.mp3" id="6_p57ef"]
+[ext_resource type="PackedScene" uid="uid://bpsl7xp712dj7" path="res://scenes/coin.tscn" id="7_u5sy4"]
+[ext_resource type="FontFile" uid="uid://b83n52k38khkw" path="res://assets/PixelOperator8.ttf" id="9_0tnpc"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_g4v7s"]
 
@@ -22,6 +25,21 @@ size = Vector2(322, 75.5)
 
 [node name="Game" type="Node2D" unique_id=1293251095]
 script = ExtResource("1_yqjtg")
+
+[node name="GameManager" type="Node" parent="." unique_id=2119270474]
+unique_name_in_owner = true
+script = ExtResource("2_gee14")
+
+[node name="Label" type="Label" parent="GameManager" unique_id=1925138817]
+offset_left = 51.0
+offset_top = -25.000002
+offset_right = 123.949295
+offset_bottom = -12.499994
+scale = Vector2(0.32899567, 0.32)
+theme_override_fonts/font = ExtResource("9_0tnpc")
+theme_override_font_sizes/font_size = 10
+text = "Score:"
+autowrap_mode = 2
 
 [node name="Player" parent="." unique_id=299972764 instance=ExtResource("1_uwrxv")]
 position = Vector2(-55, 60)
@@ -68,6 +86,21 @@ position = Vector2(-166, 48)
 stream = ExtResource("6_p57ef")
 volume_db = -0.2
 autoplay = true
+
+[node name="Coin" parent="." unique_id=308472346 instance=ExtResource("7_u5sy4")]
+position = Vector2(-15, 90)
+
+[node name="Coin2" parent="." unique_id=1914485046 instance=ExtResource("7_u5sy4")]
+position = Vector2(-169, 98)
+
+[node name="Coin3" parent="." unique_id=79697794 instance=ExtResource("7_u5sy4")]
+position = Vector2(75, 94)
+
+[node name="Coin4" parent="." unique_id=989285574 instance=ExtResource("7_u5sy4")]
+position = Vector2(12, 53)
+
+[node name="Coin5" parent="." unique_id=1968748041 instance=ExtResource("7_u5sy4")]
+position = Vector2(-100, 82)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="Timer" to="Player" method="_on_timer_timeout"]
