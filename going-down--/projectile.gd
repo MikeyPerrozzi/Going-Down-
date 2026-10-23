@@ -21,3 +21,12 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	position += speed * direction * delta
+	
+func _on_area_entered(area):
+	if area.is_in_group("enemies"):
+		area.explode()
+		queue_free()
+	
+	
+
+	

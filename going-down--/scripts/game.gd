@@ -1,6 +1,7 @@
 extends Node2D
 
-var Score = 0
+var swordfish = preload("res://scenes/swordfish_enemy.tscn")
+var score = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -17,3 +18,4 @@ func _process(delta: float) -> void:
 #func _on_timer_timeout() -> void:
 	#print(Score)
 	#Score += 1;
+	

@@ -51,9 +51,6 @@ shape = SubResource("RectangleShape2D_saqji")
 process_callback = 0
 wait_time = 0.003
 
-[node name="swordfish_enemy" parent="." unique_id=616288120 instance=ExtResource("3_lnu2h")]
-position = Vector2(-171, 48)
-
 [node name="Elevatorproject" type="Sprite2D" parent="." unique_id=1852692344]
 z_index = -1
 position = Vector2(-55, 30.999998)
@@ -62,6 +59,9 @@ texture = ExtResource("4_lbhrr")
 
 [node name="Crab" parent="." unique_id=1759652398 instance=ExtResource("5_iywne")]
 position = Vector2(61, 73)
+
+[node name="swordfish_enemy" parent="." unique_id=616288120 instance=ExtResource("3_lnu2h")]
+position = Vector2(-166, 48)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="Timer" to="Player" method="_on_timer_timeout"]
