@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://btuvg57cil2j0"]
 
 [ext_resource type="Script" uid="uid://deg7nnw8dgfhw" path="res://scripts/title_screen.gd" id="1_73n4j"]
+[ext_resource type="Texture2D" uid="uid://ks1sdwont73u" path="res://assets/Title.png" id="2_olc8q"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aea6e"]
 bg_color = Color(0.061718084, 0.07507, 0.08488081, 1)
@@ -28,10 +29,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -235.0
-offset_top = -326.0
-offset_right = 240.0
-offset_bottom = -185.0
+offset_left = -549.0
+offset_top = -245.0
+offset_right = -74.0
+offset_bottom = -104.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_color = Color(0.108391546, 0.6651001, 0.33336246, 1)
@@ -46,10 +47,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -232.0
-offset_top = -157.0
-offset_right = 243.0
-offset_bottom = -16.0
+offset_left = 22.0
+offset_top = -256.0
+offset_right = 497.0
+offset_bottom = -115.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -69,6 +70,12 @@ Nicholas McDonald
 Oisin Leonard
 Mikey Perrozzi "
 
+[node name="Title" type="Sprite2D" parent="." unique_id=802227063]
+z_index = -1
+position = Vector2(636.4745, 380.50003)
+scale = Vector2(0.8471884, 0.8319755)
+texture = ExtResource("2_olc8q")
+
 [connection signal="pressed" from="Start Button" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Exit Button" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Exit Button" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="Exit Button" to="." method="_on_start_pressed"]
